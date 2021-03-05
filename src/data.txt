@@ -1,0 +1,112 @@
+const PRComponent = () => {
+    function onChange(value) {
+        console.log('changed', value);
+      }
+    
+    //74257cd842ead247934ec740fe4ebd9d
+      return (
+        <div className="align:center">
+                    <InputNumber size="large" min={1} max={100000} defaultValue={3} onChange={onChange} />
+        </div>
+      );
+    };
+
+// class PRComponent extends  React.Component {
+    
+//     render() {
+//         return (
+//          <div className="align:center">
+//               <InputNumber size="large" min={1} max={100000} defaultValue={3} onChange={onChange} />
+//          </div>
+//         );
+//       }
+// }
+
+
+export default PRComponent;
+------------------------------------------------Steps-----------------------------------------------------
+// const Stepsperformed = () => {
+//    const state = {
+//             current: 0,
+//           };
+
+//     const onChange = current => {
+//     console.log('onChange:', current);
+//     this.setState({ current });
+//   };  
+  
+//   return(
+//     <>
+//                 <Steps current={current} onChange={this.onChange}>
+//                 <Step title="Step 1" description="This is a description." />
+//                 <Step title="Step 2" description="This is a description." />
+//                 <Step title="Step 3" description="This is a description." />
+//             </Steps>
+//           </>
+//   );
+// }
+
+// class Stepsperformed extends React.Component {
+//   state = {
+//     current: 0,
+//   };
+
+//   onChange = current => {
+//     console.log('onChange:', current);
+//     if(current=0){
+//         alert("0")
+//     }
+//     if(current=1){
+// alert("1")
+//     }
+//     if(current=2){
+//         alert("2")
+//     }
+//     this.setState({ current });
+//   };
+
+//   render() {
+//     const { current } = this.state;
+
+//     return (
+//       <>
+//         <Steps current={current} onChange={this.onChange}>
+//           <Step title="Step 1" description="This is a description." />
+//           <Step title="Step 2" description="This is a description." />
+//           <Step title="Step 3" description="This is a description." />
+//         </Steps>
+//       </>
+//     );
+//   }
+// }
+
+--------------------------------------------------------------------------------------------------------------------
+ <br />
+<div>
+<Checkbox onChange={onChange}>PF Applicable ?</Checkbox><br />
+&nbsp;&nbsp;EPF Joining Date:&nbsp;<DatePicker />
+&nbsp;&nbsp;Joining Date:&nbsp;<DatePicker />
+&nbsp;&nbsp;Last Reappointment Date:&nbsp;<DatePicker disabled/>
+</div>
+<br />
+<br />
+<div >
+<Checkbox onChange={onChange}>Pension available ?</Checkbox>
+PF No.<Input />
+PF UAN<Input />
+Prev Member ID<Input />
+</div>
+<br />
+<br />
+<div>
+<Checkbox onChange={onChange}>ESIC Applicable ?</Checkbox>
+ESIC No.<Input />
+</div>
+<br />
+<br />
+<div>
+<Checkbox onChange={onChange}>PT Applicable ?</Checkbox>
+<Checkbox onChange={onChange}>LWF Applicable ?</Checkbox>
+PAN No.<Input />
+EPS No.<Input />
+</div>
